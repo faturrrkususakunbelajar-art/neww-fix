@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Digital - Solusi Lapar Anda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-page" class="auth-container">
+        <div class="login-box">
+            <h2>Selamat Datang di <br><span>Kedai Digital</span></h2>
+            <p>Silakan masuk untuk melihat menu</p>
+            <input type="text" id="username" placeholder="Username (admin)">
+            <input type="password" id="password" placeholder="Password (12345)">
+            <button onclick="login()">Masuk Sekarang</button>
+            <p id="error-msg"></p>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <nav>
+                <div class="logo">Kedai Digital</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <h1>Cita Rasa Digital di Meja Anda</h1>
+            <p>Pesan makanan favoritmu dengan sekali klik!</p>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Daftar Menu Favorit</h2>
+            <div class="menu-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=400" alt="Pizza">
+                    <h3>Pizza Klasik</h3>
+                    <p>Rp 45.000</p>
+                    <button onclick="pesanKeWA('Pizza Klasik')">Pesan via WA</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400" alt="Burger">
+                    <h3>Burger Double</h3>
+                    <p>Rp 30.000</p>
+                    <button onclick="pesanKeWA('Burger Double')">Pesan via WA</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1544145945-f904253d0c7b?q=80&w=400" alt="Kopi">
+                    <h3>Es Kopi Susu</h3>
+                    <p>Rp 15.000</p>
+                    <button onclick="pesanKeWA('Es Kopi Susu')">Pesan via WA</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <h2>Tentang Kami</h2>
+                <p>Kedai Digital adalah pionir layanan makanan berbasis teknologi yang mengutamakan kecepatan dan kualitas rasa. Kami percaya bahwa makanan enak harus bisa diakses oleh siapa saja dengan mudah.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Kedai Digital. Hubungi: 085743473837</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
